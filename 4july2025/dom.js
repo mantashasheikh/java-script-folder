@@ -37,13 +37,24 @@ function red(){
     let x = document.querySelector("#box")
     x.style.backgroundColor ="red"
 }
-function green(){
+function brown(){
      let y = document.querySelector("#box")
-     y.style.backgroundColor ="green"
+     y.style.backgroundColor ="brown"
 }
 function orange(){
      let z = document.querySelector("#box")
      z.style.backgroundColor ="orange"
 }
+function butterfly(){
+    let a = document.querySelector("#image")
+    a.src = "butterfly.jpg"
+    a.alt = "butterfly"
+}
+function teddybear(){
+    let b = document.querySelector("#image")
+    b.src = "teddy bear.jpg"
+    b.alt = "teddy bear"
+}
+
 
 
