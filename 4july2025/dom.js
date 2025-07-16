@@ -24,9 +24,26 @@ function green(){
     let h = document.getElementById("heading")
     h.style.color = "green"
     h.style.fontSize = "100px"
+    h.style.backgroundColor = "yellow"
 }
 function pink(){
     let h = document.getElementById("heading")
     h.style.color = "pink"
     h.style.fontSize = "100px"
+    h.style.backgroundColor = "blue"
 }
+
+function red(){
+    let x = document.querySelector("#box")
+    x.style.backgroundColor ="red"
+}
+function green(){
+     let y = document.querySelector("#box")
+     y.style.backgroundColor ="green"
+}
+function orange(){
+     let z = document.querySelector("#box")
+     z.style.backgroundColor ="orange"
+}
+
+
