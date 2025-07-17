@@ -35,26 +35,29 @@ function pink(){
 
 function red(){
     let x = document.querySelector("#box")
-    x.style.backgroundColor ="red"
+    x.style.backgroundImage ="url(butterfly.jpg)"
 }
 function brown(){
      let y = document.querySelector("#box")
-     y.style.backgroundColor ="brown"
+     y.style.backgroundImage = "url(https://www.shutterstock.com/image-photo/fantastic-evening-kirkjufell-volcano-coast-600nw-530221900.jpg)"
 }
 function orange(){
      let z = document.querySelector("#box")
-     z.style.backgroundColor ="orange"
+     z.style.backgroundImage = "url(teddybear.jpg)"
 }
 function butterfly(){
     let a = document.querySelector("#image")
     a.src = "butterfly.jpg"
     a.alt = "butterfly"
+   
 }
 function teddybear(){
     let b = document.querySelector("#image")
     b.src = "teddy bear.jpg"
     b.alt = "teddy bear"
 }
+
+
 
 
 
