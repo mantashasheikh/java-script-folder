@@ -57,6 +57,17 @@ function teddybear(){
     b.alt = "teddy bear"
 }
 
+function show(){
+    let t = document.querySelector("#line")
+    t.innerHTML = "this is a para"
+    t.style.fontSize = "50px"
+}
+
+function hide(){
+    let t = document.querySelector("#line")
+    t.style.display = "none"
+}
+
 
 
 
