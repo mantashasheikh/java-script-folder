@@ -8,7 +8,7 @@ function Addtext(){
     // ok.style.color ="red"
     // ok.style.backgroundColor = "lightblue"
 
-
+// hw 1
     let p = document.getElementById("para")
     p.innerHTML = "this is paragraph"
     p.style.color = "orange"
@@ -20,6 +20,8 @@ function Addtext(){
     s.style.fontSize = "50px"
 }
 
+
+// hw 2
 function green(){
     let h = document.getElementById("heading")
     h.style.color = "green"
@@ -33,6 +35,8 @@ function pink(){
     h.style.backgroundColor = "blue"
 }
 
+
+
 function red(){
     let x = document.querySelector("#box")
     x.style.backgroundColor = "red"
@@ -45,6 +49,9 @@ function orange(){
      let z = document.querySelector("#box")
      z.style.backgroundColor = "orange"
 }
+
+
+// hw 3
 function butterfly(){
     let a = document.querySelector("#image")
     a.src = "butterfly.jpg"
@@ -57,6 +64,8 @@ function teddybear(){
     b.alt = "teddy bear"
 }
 
+
+// hw 4
 function show(){
     let t = document.querySelector("#line")
     t.style.fontSize = "50px"
@@ -68,6 +77,10 @@ function hide(){
     t.style.fontSize = "50px"
     t.style.display = "none"
 }
+
+
+
+
 
 
 
