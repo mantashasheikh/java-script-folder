@@ -36,9 +36,30 @@ console.log("total number of odd:",odd)
 
 
 // reverse an array
-
 let list = [10,20,30,40,50]
-list.slice[0,-1]
+let list2 =[] 
+for(let i=list.length-1; i>=0; i--){
+  list2.push(list[i])
+}
+console.log(list2)
+
+// check if an element exist
+let list3 = [3,5,7,9,11]
+for(let i=0 ; i<list3.length ; i++){
+    if(list3[i]==9){
+        console.log("yes, 9 is present in the array")
+    }
+    
+}
+
+
+// merge two arrays without using concat method
+let arr1= [1,2,3] 
+let arr2 = [4,5,6]
+for(let i=0 ; i<arr2.length ; i++){
+    arr1.push(arr2[i])
+}
+console.log(arr1)
 
 
 
