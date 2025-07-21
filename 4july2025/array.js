@@ -8,14 +8,14 @@ for(let i=0; i<number.length;i++){
 console.log(sum)
 
 // find the maximum number in an array
-let arr = [3,7,2,9,5]
-let max = 0
-for (let i=0; i<arr.length ; i++){
-    if(max<arr[i]){
-        max = arr[i]
-    }
-}
-console.log(max) 
+// let arr = [3,7,2,9,5]
+// let max = 0
+// for (let i=0; i<arr.length ; i++){
+//     if(max<arr[i]){
+//         max = arr[i]
+//     }
+// }
+// console.log(max) 
 
 
 // count even and odd
@@ -60,6 +60,22 @@ for(let i=0 ; i<arr2.length ; i++){
     arr1.push(arr2[i])
 }
 console.log(arr1)
+
+// arrange the array element in ascending order
+let arr = [5, 2, 8, 1, 3];
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr.length - i - 1; j++) {
+    if (arr[j] > arr[j + 1]) {
+      let temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+}
+
+console.log("Sorted array in ascending order:", arr);
+
 
 
 
