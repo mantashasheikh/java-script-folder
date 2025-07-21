@@ -62,19 +62,38 @@ for(let i=0 ; i<arr2.length ; i++){
 console.log(arr1)
 
 // arrange the array element in ascending order
-let arr = [5, 2, 8, 1, 3];
 
-for (let i = 0; i < arr.length; i++) {
-  for (let j = 0; j < arr.length - i - 1; j++) {
-    if (arr[j] > arr[j + 1]) {
-      let temp = arr[j];
-      arr[j] = arr[j + 1];
-      arr[j + 1] = temp;
+numArr = [2,4,1,5,3]   
+function sortArr(numArr){
+    let length = numArr.length
+    for(let i=0 ; i<length-1 ; i++){
+       for(let j=i+1 ; j<length ; j++){
+           if(numArr[i] > numArr[j]){
+               [numArr[i],numArr[j]] = [numArr[j],numArr[i]]
+            }
+        }
     }
-  }
-}
+    console.log(`sorted Array = ${numArr}`)
 
-console.log("Sorted array in ascending order:", arr);
+}
+sortArr(numArr)
+
+// arrange the sorted element in descending order
+numArr = [2,4,1,5,3]   
+function reverseSortArr(numArr){
+    let length = numArr.length
+    for(let i=0 ; i<length-1 ; i++){
+       for(let j=i+1 ; j<length ; j++){
+           if(numArr[i] < numArr[j]){
+               [numArr[i],numArr[j]] = [numArr[j],numArr[i]]
+            }
+        }
+    }
+    console.log(`sorted Array = ${numArr}`)
+
+}
+reverseSortArr(numArr)
+
 
 
 
