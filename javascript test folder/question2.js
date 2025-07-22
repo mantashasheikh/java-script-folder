@@ -1,6 +1,6 @@
 let num = window.confirm("do you want to see the number from 1 to 10 :")
 
-if(num == "OK"){
+if(num==true){
     for(let i=1 ; i<=10 ; i++){
        console.log(i)
     }
