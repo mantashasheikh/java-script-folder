@@ -25,17 +25,16 @@ for(let i=0 ; i<=arr.length ; i++){
         max=arr[i]
     }
 }
-console.log("the maximum nuber in an array is",max)
+console.log("the maximum number in an array is",max)
 
 let num1 = 123456
-let ans = num1
-if(num1>0){
-    let rem = num1 % 10
-    let rev =  
-
+let rev = 0
+while(num1>0){
+    let rem = num1%10
+    rev = rev*10+rem
+    num1 = num1/10
 }
- 
-
+console.log(rev)
 
 
 
