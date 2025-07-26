@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
       <p id="para">My name is Mantasha Sheikh</p>
       <button onclick="hide()">HIDE</button>
+      <br>
+      <br>
 
       <h1 id="heading"></h1>
       <button onclick="show()">SHOW</button>
+      <br>
+      <br>
+
+      <div id="box"></div>
+      <br>
+      <br>
+      <button onclick="change()">color change</button>
+
+      
+      
 
 
 
@@ -27,7 +46,12 @@
             heading.innerHTML="this is a heading"
         }
 
-        
+        function change(){
+            let box = document.querySelector("#box")
+            box.style.backgroundColor = "blue"
+        }
+
+
 
     </script>
     
