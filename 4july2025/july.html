@@ -26,7 +26,22 @@
       <div id="box"></div>
       <br>
       <br>
-      <button onclick="change()">color change</button>
+      <button onclick="change()">color change</button>\
+      <br>
+      <br>
+      
+      enter a first name : <input type="text" id="firstname" placeholder="enter a first name"><br><br>
+      enter a last name : <input type="text"  id="lastname" placeholder="enter a last name">     
+      <button onclick="btn()">SUBMIT</button>
+      <br>
+      <br>
+
+      enter number 1 : <input type="number" id="firstnum">
+      <br><br>
+      enter number 2 : <input type="number"  id="secondnum">
+      <br><br>
+      <button onclick="sum()">OPERATOR</button>
+
 
       
       
@@ -50,6 +65,48 @@
             let box = document.querySelector("#box")
             box.style.backgroundColor = "blue"
         }
+
+        function btn(){
+            let firstName = document.querySelector("#firstname").value
+            let lastName = document.querySelector("#lastname").value
+            console.log(firstName)
+            console.log(lastName)        
+        }
+
+        function sum(){
+            let num1 = parseInt(document.querySelector("#firstnum").value)
+            let num2 = parseInt(document.querySelector("#secondnum").value)
+            let opertor = prompt("enter an operator(+,-,*,/,%) : ")
+            if(opertor=="+"){
+                let ans = num1+num2
+                console.log(ans)
+            }
+            else if(opertor=="-"){
+                ans = num1-num2
+                console.log(ans)
+            }
+            else if(opertor=="*"){
+                ans = num1*num2
+                console.log(ans)
+            }
+            else if(opertor=="/"){
+                ans = num1/num2
+                console.log(ans)
+            }
+            else if(opertor=="%"){
+                ans = num1%num2
+                console.log(ans)
+            }
+            else{
+                console.log("invalid operator")
+            }
+            
+                    
+        }
+
+
+
+
 
 
 
