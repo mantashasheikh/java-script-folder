@@ -142,6 +142,17 @@ for (let i = 0; i < arr2.length; i++) {
 console.log(mergedArr);
 
 
+let arr3 = [1, 2, 3, 4, 5];
+let k = 2; 
+
+k = k % arr3.length; 
+for (let i = 0; i < k; i++) {
+    let last = arr3.pop();  
+    arr3.unshift(last);     
+}
+console.log(arr3);
+
+
 
 
 
