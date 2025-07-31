@@ -27,6 +27,8 @@ for(let i=0 ; i<=arr.length ; i++){
 }
 console.log("the maximum number in an array is",max)
 
+
+
 let num1 = 123456
 let rev = 0
 while(num1>0){

@@ -17,6 +17,7 @@
       <button onclick="hide()">HIDE</button>
       <br>
       <br>
+      
 
       <h1 id="heading"></h1>
       <button onclick="show()">SHOW</button>
@@ -177,12 +178,44 @@ for (let i = arr5.length - 1; i >= 0; i--) {
 console.log("Reversed array:", reversed);
 
 
+// num = 12345
+// while(num>0){
+//     mod = num%10
+// }
+
+// let num = 123456789
+// let ans = Number(num.toString().split('').reverse().join(''))
+// console.log(ans)
+
+
+// let str=  num.toString()
+// let r = str.split('')
+// let rev = r.reverse()
+// let st = rev.join('')
+// let n = parseFloat(st)
+// console.log(n)
+
+let n = 12345
+let rev = 0
+while(n>0){
+    let mod = n%10
+     rev = rev*10+mod
+     n = Math.floor( n/10)
+    
+}
+console.log(rev)
 
 
 
 
 
-    </script>
+
+
+
+ 
+
+
+  </script>
     
 </body>
 </html>
