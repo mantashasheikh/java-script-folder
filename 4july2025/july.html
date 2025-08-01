@@ -42,6 +42,13 @@
       enter number 2 : <input type="number"  id="secondnum">
       <br><br>
       <button onclick="sum()">OPERATOR</button>
+      <br>
+      <br>
+      enter first word : <input type="text"  id="word1">
+      enter second word : <input type="text"  id="word2">
+      <br>
+      <br>
+      <button onclick="check()">CHECK</button>
 
 
       
@@ -195,15 +202,45 @@ console.log("Reversed array:", reversed);
 // let n = parseFloat(st)
 // console.log(n)
 
-let n = 12345
-let rev = 0
-while(n>0){
-    let mod = n%10
-     rev = rev*10+mod
-     n = Math.floor( n/10)
+// let n = 12345
+// let rev = 0
+// while(n>0){
+//     let mod = n%10
+//      rev = rev*10+mod
+//      n = Math.floor( n/10)
     
+// }
+// console.log(rev)
+
+
+function check(){
+    let word1 = document.querySelector("#word1").value
+    let word2 = document.querySelector("#word2").value
+    let ar1 = word1.split('').sort().join('')
+    let ar2 = word2.split('').sort().join('')
+    if(ar1.length==ar2.length){
+        if(ar1 == ar2){
+           console.log("it is an anagram")
+        }
+        else{
+           console.log("it is not an anagram")
+        }
+    }
+    else{
+        console.log("it is not an anagram")
+    }
+
+
 }
-console.log(rev)
+   
+
+
+
+
+
+
+
+
 
 
 
