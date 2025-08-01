@@ -214,11 +214,18 @@ console.log("Reversed array:", reversed);
 
 
 function check(){
-    let word1 = document.querySelector("#word1").value
-    let word2 = document.querySelector("#word2").value
+    let word1 = document.querySelector("#word1").value.trim()
+    let word2 = document.querySelector("#word2").value.trim()
+    
     let ar1 = word1.split('').sort().join('')
     let ar2 = word2.split('').sort().join('')
-    if(ar1.length==ar2.length){
+    
+
+    if (ar1 === "" || ar2 === "") {
+        
+        console.log("the string has not given to the input tag")
+      }
+    else if(ar1.length==ar2.length){
         if(ar1 == ar2){
            console.log("it is an anagram")
         }
