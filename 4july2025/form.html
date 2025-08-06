@@ -32,6 +32,37 @@
 
 
     <script>
+      function formval(){
+        let Name = document.querySelector("#name").value
+        let Email = document.querySelector("#email").value
+        let Num = document.querySelector("#num").value
+        let Pass = document.querySelector("#pass").value
+        let Cpass = document.querySelector("#cpass").value
+        
+        
+        let Errname = document.querySelector("#errname")
+        let Erremail = document.querySelector("#erremail")
+        let Errnum = document.querySelector("#errnum")
+        let Errpass = document.querySelector("#errpass")
+        let Errcpass = document.querySelector("#errcpass")
+
+
+        if(Name==""){
+          Errname.innerHTML="Please enter name*"
+          Errname.style.color="red"
+          return false
+        }
+        else if(Num==""){
+          Errnum.innerHTML="Please enter number*"
+          Errnum.style.color="red"
+          return false
+        }
+        else if(Num.length!=10){
+          Errnum.innerHTML="Please enter valid number*"
+          Errnum.style.color="red"
+          return false
+        }
+      }
 
     </script>
     
