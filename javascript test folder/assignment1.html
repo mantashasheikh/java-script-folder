@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment 1</title>
+</head>
+<body>
+     
+
+
+
+
+
+
+
+
+
+    <script>
+        // check if the user is adult or not
+        let age = prompt("enter an age : ")
+        if(age>=18){
+            alert("adult")          
+        }
+        else{
+            alert("not adult")
+        }
+
+
+
+        // simple calcuator
+        let num1 = parseFloat(prompt("enter first number : "))
+        let num2 = parseFloat(prompt("enter second number : "))
+        let operator = prompt("enter an operator (+,-,*,/,%) : ")
+        switch(operator){
+            case "+": 
+                 result = num1+num2
+                 alert(`result: ${result}`)
+                 break
+            case "-":
+                result = num1 - num2
+                alert(`result: ${result}`) 
+                break
+            case "*": 
+                 result = num1*num2
+                 alert(`result: ${result}`)
+                 break
+            case "/":
+                result = num1 / num2
+                alert(`result: ${result}`) 
+                break 
+            case "%": 
+                 result = num1%num2
+                 alert(`result: ${result}`)
+                 break
+            }
+    </script>
+    
+</body>
+</html>
